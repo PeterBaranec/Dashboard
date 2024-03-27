@@ -45,3 +45,8 @@ main {
 .crypto>span {
     font-size: 1.3rem;
 }
+
+#crypto {
+    font-size: 1.3rem;
+    text-align: center;
+}
