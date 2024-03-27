@@ -4,5 +4,5 @@ fetch(
   .then((res) => res.json())
   .then((data) => {
     document.body.style.backgroundImage = `url(${data.urls.full})`;
-    document.getElementById("author-name").innerText = `${data.user.name}`;
+    document.getElementById("author-name").innerText = `By: ${data.user.name}`;
   });
