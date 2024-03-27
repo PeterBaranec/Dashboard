@@ -27,3 +27,14 @@ fetch("https://api.coingecko.com/api/v3/coins/bitcoin")
     `;
   })
   .catch((err) => console.error(err));
+
+//Get Current Time
+function getCurrentTime() {
+  const date = new Date();
+  document.getElementById("time").textContent = date.toLocaleTimeString(
+    "en-GB",
+    { timeStyle: "medium" }
+  );
+}
+
+setInterval(getCurrentTime, 1000);
